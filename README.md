@@ -1,0 +1,1 @@
+# for notes on the new lead gen platform

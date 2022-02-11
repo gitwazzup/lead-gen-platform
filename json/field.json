@@ -1,0 +1,16 @@
+{
+  "name": "name",
+  "label": "Voornaam",
+  "type": "text",
+  "required": true,
+  "colWidth": 1,
+  "errorText": "",
+  "disabled": false,
+  "options": [
+    {
+      "name": "",
+      "value": "",
+      "disabled": false
+    }
+  ]
+}
