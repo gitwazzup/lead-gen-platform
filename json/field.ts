@@ -1,12 +1,21 @@
-type FieldType = 'text' | 'select' | 'radio'
+type FieldType =
+  | "text"
+  | "dropdown"
+  | "radio"
+  | "checkbox"
+  | "textarea"
+  | "amount"
+  | "phone"
+  | "datepicker";
 
-interface OptionModel {
+/** For dropdown options */
+interface Option {
   name: string;
   value: string;
-  disabled: false;
 }
 
-export interface FieldModel {
+export interface Field {
+  id: number;
   name: string;
   label: string;
   type: FieldType;
@@ -15,7 +24,6 @@ export interface FieldModel {
   colSpan: number;
   errorText: string;
   disabled: boolean;
-  colspan: string;
   minLength: string;
   maxLength: string;
   minValue: string;
@@ -23,5 +31,6 @@ export interface FieldModel {
   regexPattern: string;
   currency: string;
   className: string;
-  options: OptionModel[];
+  options: Option[];
+  customValidator: string;
 }

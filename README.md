@@ -1,1 +1,4 @@
-# for notes on the new lead gen platform
+# new lead gen platform
+
+## to-do
+- [ ] set up json

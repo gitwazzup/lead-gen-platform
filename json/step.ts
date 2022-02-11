@@ -1,6 +1,10 @@
-export interface StepModel {
+import { Component } from "./component";
+import { Field } from "./field";
+
+export interface Step {
   title: string;
   intro: string;
-  submit: string;
-  fields: [];
+  submitBtn: string;
+  fields: Field[];
+  components: Component[];
 }
