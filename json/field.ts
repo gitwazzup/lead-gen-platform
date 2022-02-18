@@ -23,14 +23,12 @@ export interface Field {
   required: boolean;
   colspan: number;
   errorText: string;
-  disabled: boolean;
-  minLength: string;
-  maxLength: string;
-  minValue: string;
-  maxValue: string;
+  minLength: number;
+  maxLength: number;
+  minValue: number;
+  maxValue: number;
   regexPattern: string;
-  currency: string;
+  currency: boolean;
   className: string;
   options: Option[];
-  customValidator: string;
 }
