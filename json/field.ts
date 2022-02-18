@@ -20,8 +20,8 @@ export interface Field {
   label: string;
   type: FieldType;
   placeholder: string;
-  required: true;
-  colSpan: number;
+  required: boolean;
+  colspan: number;
   errorText: string;
   disabled: boolean;
   minLength: string;
