@@ -6,7 +6,11 @@ type FieldType =
   | "textarea"
   | "amount"
   | "phone"
-  | "datepicker";
+  | "datepicker"
+  | "dealer-selector"
+  | "charging-selector"
+  | "model-selector"
+  | "people-selector";
 
 /** For dropdown options */
 interface Option {
@@ -19,16 +23,16 @@ export interface Field {
   name: string;
   label: string;
   type: FieldType;
-  placeholder: string;
   required: boolean;
   colspan: number;
-  errorText: string;
-  minLength: number;
-  maxLength: number;
-  minValue: number;
-  maxValue: number;
-  regexPattern: string;
-  currency: boolean;
-  className: string;
-  options: Option[];
+  placeholder?: string;
+  errorText?: string;
+  minLength?: number;
+  maxLength?: number;
+  minValue?: number;
+  maxValue?: number;
+  regexPattern?: string;
+  currency?: boolean;
+  className?: string;
+  options?: Option[];
 }

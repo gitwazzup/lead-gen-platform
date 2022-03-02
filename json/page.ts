@@ -10,7 +10,6 @@ interface Page {
   brand: "Toyota" | "Lexus";
   form: Form;
   steps: Step[];
-  campaign: Campaign;
+  campaign?: Campaign;
   // dataLayer: 
-  // tagging:
 }
