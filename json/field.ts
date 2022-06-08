@@ -6,11 +6,6 @@ type FieldType =
   | "textarea"
   | "amount"
   | "phone"
-  | "datepicker"
-  | "dealer-selector"
-  | "charging-selector"
-  | "model-selector"
-  | "people-selector";
 
 /** For dropdown options */
 interface Option {
