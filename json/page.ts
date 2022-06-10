@@ -11,5 +11,6 @@ interface Page {
   form: Form;
   steps: Step[];
   campaign?: Campaign;
-  // dataLayer: 
+  // sidebar
+  // dataLayer
 }

@@ -1,9 +1,9 @@
 export interface Form {
   id: number;
-  privacy?: boolean;
-  newsLetter?: boolean;
+  privacyStatement?: boolean;
+  newsletter?: boolean;
   onSubmit: {
-    type: "e-mail" | "rest-call";
+    type: "mail" | "rest";
     email?: string;
     restUrl?: string;
   };
