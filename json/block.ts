@@ -1,12 +1,11 @@
-enum BlockType {
-  PERSONAL_DATA = "Persoonsgegevens",
-  MODEL_SELECTOR = "Model selector",
-  DEALER_SELECTOR = "Dealer selector",
-  DATE_PICKER = "Date picker",
-  CHARGING_SELECTOR = "Charging selector",
-  PEOPLE_SELECTOR = "People selector",
-  THANK_YOU = "Thank you page",
-}
+type BlockType =
+  | "personal-data"
+  | "model-selector"
+  | "dealer-selector"
+  | "dealer-dropdown"
+  | "date-picker"
+  | "charging-selector"
+  | "hybrid-selector";
 
 export interface Block {
   type: BlockType;

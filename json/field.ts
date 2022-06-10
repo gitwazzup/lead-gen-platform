@@ -4,22 +4,23 @@ type FieldType =
   | "radio"
   | "checkbox"
   | "textarea"
-  | "amount"
+  | "number"
   | "email"
   | "range"
-  | "phone";
+  | "phone"
+  | "license-plate";
 
-/** For dropdown options */
+/** For dropdowns and radio-buttons */
 interface Option {
   name: string;
   value: string;
 }
 
 export interface Field {
-  id: number;
+  type: FieldType;
+  sort: number;
   name: string;
   label: string;
-  type: FieldType;
   required: boolean;
   colspan: number;
   placeholder?: string;

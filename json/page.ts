@@ -1,16 +1,24 @@
 import { Campaign } from "./campaign";
-import { Form } from "./form";
 import { Step } from "./step";
 
 interface Page {
-  id: number;
   title: string;
   intro: string;
   description: string;
   brand: "Toyota" | "Lexus";
-  form: Form;
   steps: Step[];
   campaign?: Campaign;
+  url: string;
+  disclaimer: string;
+  privacyStatement?: boolean;
+  newsletter?: boolean;
+  onSubmit: {
+    type: "mail" | "rest";
+    email?: string;
+    restUrl?: string;
+  };
+  // specific
+  // heroImage
   // sidebar
   // dataLayer
 }
