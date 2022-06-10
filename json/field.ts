@@ -5,7 +5,9 @@ type FieldType =
   | "checkbox"
   | "textarea"
   | "amount"
-  | "phone"
+  | "email"
+  | "range"
+  | "phone";
 
 /** For dropdown options */
 interface Option {
@@ -22,6 +24,7 @@ export interface Field {
   colspan: number;
   placeholder?: string;
   errorText?: string;
+  infoText?: string;
   minLength?: number;
   maxLength?: number;
   minValue?: number;
