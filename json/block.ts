@@ -1,5 +1,5 @@
 type BlockType =
-  | "personal-data"
+  | "personal-info"
   | "model-selector"
   | "dealer-selector"
   | "dealer-dropdown"
@@ -10,6 +10,7 @@ type BlockType =
 export interface Block {
   type: BlockType;
   sort: number;
-  input: [];
-  options: [];
+  restUrl: string;
+  data: {};
+  properties: {};
 }
